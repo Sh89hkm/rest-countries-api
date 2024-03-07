@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"/>
+    <title>REST Countries API Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="headerBox">
+          <div class="logo">
+            <a href="index.html">
+              <h1>Where in the world?</h1>
+            </a>
+          </div>
+          <button type="button" id="toggle-color">
+            <i id="themeIcon" class="fa-regular fa-moon"></i>
+            <span id="themeText">Dark Mode</span>
+          </button>
+        </div>
+      </header>
+
+       <div id="searchContainerID" class="searchContainer">
+            <input type="text" id="search-input" placeholder="Search for a country...">
+            <select id="region-select">
+                <option disabled selected>Filter by Region</option>
+                <option value="">All</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+       </div>
+        
+    
+    <main>
+        <div id="country-container" class="grid-container">
+            <!-- All countries will be dynamically added here -->
+        </div>
+        <div id="detail-div">
+            <!-- Each country details will be dynamically added here -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
