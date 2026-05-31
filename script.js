@@ -121,7 +121,7 @@ document.getElementById('region-select').addEventListener('change', () => {
 
 // Initialization
 (async () => {
-    const apiUrl = 'https://restcountries.com/v3.1/all';
+    const apiUrl = 'https://restcountries.com/v3.1/all?fields=name,capital,population,region,flags,tld,currencies,languages,borders';
     const countriesData = await fetchData(apiUrl);
     window.allCountries = countriesData; // Store all countries globally
     displayCountries(countriesData);
